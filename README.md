@@ -70,15 +70,17 @@ We generated comments of 8 videos from different categories in 5 different ways 
 
 ## Implementation
 - datasets
+  - train_data
+  - test_data
 - results
-- Youtube_crawling.jpynb
-- Youtube_crawling.py
-- fine_tuning.py
-- finetuned_beam.py
-- finetuned_dosample.py
-- finetuned_greedy.py
-- manual_test.py
-- original_greedy.py
+  - Youtube_crawling.jpynb
+  - Youtube_crawling.py
+  - fine_tuning.py
+  - finetuned_beam.py
+  - finetuned_dosample.py
+  - finetuned_greedy.py
+  - manual_test.py
+  - original_greedy.py
   
 
 
