@@ -70,8 +70,8 @@ We generated comments of 8 videos from different categories in 5 different ways 
 
 ## Implementation
 - datasets
-  - train_data
-  - test_data
+  - train_dataset.xlsx
+  - test_dataset.xlsx
 - results
   - Youtube_crawling.jpynb
   - Youtube_crawling.py
