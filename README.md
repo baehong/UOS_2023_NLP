@@ -51,6 +51,7 @@ We generated comments of 8 videos from different categories in 5 different ways 
 <img src="https://github.com/krjeo/UOS_2023_NLP/assets/138076274/9ce658d5-eaab-4d7e-a6b8-f0b6980ef0e9"  width="700"/>
 <br/><br/>
 
+
 ## Conclusion
 - To summarize the contribution of our project : <br/>
 (1) We created a dataset of 2400 video subtitle-comment pairs from YouTube videos. <br/>
@@ -60,10 +61,26 @@ We generated comments of 8 videos from different categories in 5 different ways 
 (1) Increase the number of comment samples per video for dataset that reduces bias and help the model to generate varied comments in real-word scenarios.<br/>
 (2) Add visual information such as thumbnail images and video scenes for multi-modal learning could lead to better performance and more realistic comment generation.<br/><br/><br/>
 
+
 ## References
 - Hugo Touvron, Thibaut Lavril, Gautier Izacard, Edouard Grave ,Guillaume Lample, et al. LLaMA: Open and Efficient Foundation Language Models. arXiv:2302.13971, 2023.
 - Haokun Liu, Derek Tam, Mohammed Muqeeth, et al. Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning. arXiv:2205.05638, 2022. 
 - Yanli Zhao, Andrew Gu, Rohan Varma, et al. PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel. arXiv:2304.11277, 2023.
+<br/><br/><br/>
+
+## Implementation
+- datasets
+- results
+- Youtube_crawling.jpynb
+- Youtube_crawling.py
+- fine_tuning.py
+- finetuned_beam.py
+- finetuned_dosample.py
+- finetuned_greedy.py
+- manual_test.py
+- original_greedy.py
+  
+
 
 
 
