@@ -213,14 +213,14 @@ df = df.sort_values('likes', ascending = False)
 
 
 most_like = df.iloc[0,1]
-middle_like = df.iloc[1,1]
-fewest_like = df.iloc[2,1]
+df_few = df[df['likes'] == 0]
+fewest_like = df_few.iloc[random.randint(0,len(df_few)),1]
 
 
-#while True:
- #   middle_like = df.iloc[random.randint(1, len(df) - 2), 1]
-  #  if len(middle_like) > 30:
-   #     break
+while True:
+  middle_like = df.iloc[random.randint(1, len(df) - 2), 1]
+    if len(middle_like) > 30:
+      break
 
 
 df_partial = pd.DataFrame({'title':[data.iloc[0,0], data.iloc[0,0], data.iloc[0,0]],
