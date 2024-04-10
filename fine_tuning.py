@@ -39,10 +39,10 @@ new_model = "llama-2-7b-Youtubers"
 ################################################################################
 
 # LoRA attention dimension
-lora_r = 64
+lora_r = 8
 
 # Alpha parameter for LoRA scaling
-lora_alpha = 16
+lora_alpha = 8
 
 # Dropout probability for LoRA layers
 lora_dropout = 0.1
