@@ -99,7 +99,7 @@ learning_rate = 2e-4
 weight_decay = 0.001
 
 # Optimizer to use
-optim = "adamw"
+optim = "paged_adamw_32bit"
 
 # Learning rate schedule (constant a bit better than cosine)
 lr_scheduler_type = "constant"
