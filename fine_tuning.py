@@ -21,9 +21,11 @@ df = pd.read_excel('./datasets/train_dataset.xlsx')
 df.head()
 
 ## dataset to csv
-data = df['text']
-data.to_csv('./nlp_data/llama.csv', index = False)
+train_data = df.iloc[:2160,0]
+eval_data = df.iloc[2160:,0]
 
+train_data.to_csv('./nlp_data_train/llama_train.csv', index = False)
+eval_data.to_csv('./nlp_data_eval/llama_eval.csv', index = False)
 
 # The model that you want to train from the Hugging Face hub
 model_name = "NousResearch/llama-2-7b-chat-hf"
@@ -135,8 +137,8 @@ device_map = {"": 0}
 
 
 ## 현재 데이터 셋이 있는 폴더를 설정해야함  e.g) './data/llama.csv'
-dataset = load_dataset('./nlp_data/', split="train")
-
+dataset = load_dataset('./nlp_data_train/', split="train")
+eval_dataset = load_dataset('./nlp_data_eval/', split="train")
 
 compute_dtype = getattr(torch, bnb_4bit_compute_dtype)
 
@@ -237,7 +239,7 @@ def evaluate(sample):
         return 0
 
 success_rate = []
-number_of_eval_samples = 1000
+number_of_eval_samples = 240
 # iterate over eval dataset and predict
 for s in tqdm(eval_dataset.shuffle().select(range(number_of_eval_samples))):
     success_rate.append(evaluate(s))
