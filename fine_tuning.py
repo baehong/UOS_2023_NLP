@@ -99,7 +99,7 @@ learning_rate = 2e-4
 weight_decay = 0.001
 
 # Optimizer to use
-optim = "paged_adamw_32bit"
+optim = "adamw"
 
 # Learning rate schedule (constant a bit better than cosine)
 lr_scheduler_type = "constant"
@@ -125,7 +125,7 @@ logging_steps = 25
 ################################################################################
 
 # Maximum sequence length to use
-max_seq_length = 1024
+max_seq_length = 4096
 
 # Pack multiple short examples in the same input sequence to increase efficiency
 packing = False
